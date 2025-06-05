@@ -1,0 +1,122 @@
+/* somos.css */
+
+:root {
+    --pastel-green: #B2D8B2; /* Un verde pastel suave */
+    --light-green: #D9F2D9;  /* Un verde aún más claro */
+    --darker-green: #8DBA8D; /* Un verde un poco más oscuro para acentos */
+    --text-color: #333;      /* Color de texto principal */
+    --border-color: #6A996A; /* Color para bordes de estilo retro */
+    --shadow-color: rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+body {
+    font-family: 'Press Start 2P', cursive, Arial, sans-serif; /* Puedes buscar una fuente retro si quieres */
+    background-color: var(--light-green);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.retro-header {
+    background-color: var(--pastel-green);
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 5px solid var(--border-color);
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.retro-header h1 {
+    margin: 0;
+    color: var(--text-color);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 0 var(--darker-green);
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+}
+
+.about-us-section {
+    background-color: var(--pastel-green);
+    border: 5px solid var(--border-color);
+    padding: 30px;
+    box-shadow: 8px 8px 0 var(--darker-green); /* Sombra para efecto 3D retro */
+    border-radius: 10px;
+    text-align: center;
+}
+
+.retro-paragraph {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: justify;
+    padding: 0 10px;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.retro-button {
+    display: inline-block;
+    background-color: var(--darker-green);
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 3px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 4px 4px 0 var(--text-color); /* Sombra para el botón */
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.retro-button:hover {
+    background-color: var(--pastel-green);
+    color: var(--darker-green);
+    box-shadow: 2px 2px 0 var(--text-color);
+    transform: translate(2px, 2px); /* Efecto de "presionado" */
+}
+
+.retro-button:active {
+    transform: translate(4px, 4px);
+    box-shadow: 0 0 0 transparent;
+}
+
+.retro-footer {
+    background-color: var(--pastel-green);
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    border-top: 5px solid var(--border-color);
+    box-shadow: 0 -4px 8px var(--shadow-color);
+    margin-top: 20px;
+}
+
+.retro-footer p {
+    margin: 0;
+    font-size: 0.9em;
+    color: var(--text-color);
+}
+
+/* Puedes añadir una fuente retro si la descargas y la incluyes */
+/* @font-face {
+    font-family: 'Press Start 2P';
+    src: url('fonts/PressStart2P-Regular.ttf') format('truetype');
+} */
