@@ -1,0 +1,24 @@
+// somos.js
+
+document.addEventListener('DOMContentLoaded', () => {
+    const canvaButton = document.getElementById('canvaButton');
+
+    if (canvaButton) {
+        // Añade un efecto visual al hacer click
+        canvaButton.addEventListener('click', () => {
+            console.log('Botón de Canva clickeado. ¡Redirigiendo!');
+            // Puedes añadir más lógica aquí si lo necesitas,
+            // por ejemplo, para Analytics o un mensaje de confirmación.
+        });
+
+        // Opcional: Un efecto al cargar la página para el botón
+        setTimeout(() => {
+            canvaButton.style.transform = 'scale(1.05)';
+            setTimeout(() => {
+                canvaButton.style.transform = 'scale(1)';
+            }, 100);
+        }, 500);
+    } else {
+        console.warn('El botón con ID "canvaButton" no fue encontrado en el DOM.');
+    }
+});
